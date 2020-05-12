@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Toilettes Publiques Paris</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="module" src="./apiV2.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./logo.svg" id="logo" alt="Logo Team Tac-Tac">
+        <h1 id="title">La Team Tac-Tac présente :</h1>
+    </header>
+
+    <main id="main">
+        <div id="un">
+            <section id="Wch2">
+                <img src="./wc1.png" class="wc" alt="icone Wc">
+                <h2 id="title2">"Les Toilettes Publiques de Paris"</h2>
+                <img src="./wc2.png" class="wc" alt="icone WC">
+            </section>
+
+            <p class="pDivUn">Voici une liste des toilettes publiques de la ville de Paris afin de vous faciliter la vie
+                si un besoin
+                pressant se fait sentir alors que vous admirez ses merveilleux monuments. <br>
+                Ainsi vous pouvez trouver votre bonheur en filtrant votre recherche soit par adresse ou arrondissement,
+                lorsque cela est fait vous avez la possibilité d'afficher plus de détails grâce au bouton "infos".
+            </p>
+
+            <div id="details" class="is-hidden"></div>
+
+            <input type="text" id="input" placeholder="Adresse">
+            <p class="ou">ou</p>
+            <input type="text" id="input2" placeholder="Arrondissement">
+        </div>
+        <ul id="liste"></ul>
+
+    </main>
+</body>
+
+</html>
